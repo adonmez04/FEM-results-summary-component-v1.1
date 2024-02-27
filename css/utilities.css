@@ -1,1 +1,13 @@
-@layer utilities {}
+@layer utilities {
+  .text-center {
+    text-align: center;
+  }
+
+  .margin-auto {
+    margin-inline: auto;
+  }
+
+  .stack > * + * {
+    margin-block-start: var(--stack);
+  }
+}

@@ -1,1 +1,11 @@
-@layer global {}
+@layer global {
+  body {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-feature-settings: 'clig' off, 'liga' off;
+
+    background-color: var(--bg-color-1);
+  }
+}
