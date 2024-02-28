@@ -11,4 +11,10 @@
     display: block;
     max-inline-size: 100%;
   }
+
+  a:link {
+    display: block;
+    text-decoration: none;
+    color: currentColor;
+  }
 }

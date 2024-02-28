@@ -10,6 +10,7 @@
     --blue-70: hsla(223 30% 27% / 1);
     --red-50: hsla(0 100% 67% / 1);
     --green-50: hsla(166 100% 37% / 1);
+    --yellow-50: hsla(40, 100%, 56%, 1);
 
     --red-10: hsla(0 100% 67% / 1);
     --yellow-10: hsla(39 100% 56% / 1);
@@ -22,8 +23,17 @@
   :root {
     --text-color-1: var(--blue-20);
     --text-color-2: var(--white-100);
+    --text-color-3: var(--blue-70);
+    --text-color-4: var(--red-50);
+    --text-color-5: var(--blue-70);
+    --text-color-6: var(--yellow-50);
+    --text-color-7: var(--green-50);
+    --text-color-8: var(--blue-50);
 
     --bg-color-1: var(--blue-05);
+    --bg-color-2: var(--white-100);
+    --bg-color-3: var(--blue-70);
+    
   }
 
   /* Font Sizes */
