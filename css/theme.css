@@ -38,6 +38,7 @@
 
   /* Font Sizes */
   :root {
+    /* For the mobile version - 375px */
     --body: 1.125rem;
     --heading-m: 1.5rem;
     --heading-l: 2rem;
