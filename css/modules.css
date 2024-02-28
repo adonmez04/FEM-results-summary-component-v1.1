@@ -2,10 +2,16 @@
 
   /* The article-card module */
   .article-card {
-    max-inline-size: 23.4375rem;
-    /* display: flex;
-    flex-flow: row wrap; */
+    /* 375px for the mobile version */
+    max-inline-size: 23.4375rem;    
     background-color: var(--bg-color-2);
+
+    /* 736px for the desktop version */
+    /* @media (width > 400px){
+      max-inline-size: 46rem;
+      display: flex;
+      flex-flow: row wrap;
+    } */
   }
 
 
@@ -13,7 +19,7 @@
   .card__result {
     --stack: 1.5rem;
     padding-block: 1.5rem 2.5rem;
-    flex: 1;
+    flex: 1 1 50%;
 
     border-radius: 0px 0px 32px 32px;
     background: linear-gradient(180deg, #D955FF 0%, #6943FF 0.01%, #2F2CE9 100%);
@@ -70,7 +76,7 @@
 
   /* card__summary */
   .card__summary {
-    /* flex: 1; */
+    flex: 1 1 50%;
     --stack: 1.5rem;
     padding-inline: 1.875rem;
     padding-block: 1.5rem 1.875rem;
