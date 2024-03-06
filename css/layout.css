@@ -1,1 +1,15 @@
-@layer layout {}
+@layer layout {
+
+  /* The article-card module */
+  .article-card {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /* .article-card > * */
+  .card__result,
+  .card__summary {
+    flex: 1 1 15.625rem;
+  }
+
+}

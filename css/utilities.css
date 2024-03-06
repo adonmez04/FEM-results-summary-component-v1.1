@@ -7,7 +7,8 @@
     margin-inline: auto;
   }
 
-  .stack > * + * {
+  .stack>*+* {
     margin-block-start: var(--stack);
   }
+
 }

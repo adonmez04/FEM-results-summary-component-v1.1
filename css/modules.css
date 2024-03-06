@@ -4,15 +4,12 @@
   .article-card {
     background-color: var(--bg-color-2);
     max-inline-size: 46rem;
-    display: flex;
-    flex-flow: row wrap;
   }
 
   /* card__result */
   .card__result {
-    --stack: 1.5rem;
+    --stack: 24px;
     padding-block: 1.5rem 2.5rem;
-    flex: 1 1 250px;
 
     border-radius: 0px 0px 32px 32px;
     background: linear-gradient(180deg, #D955FF 0%, #6943FF 0.01%, #2F2CE9 100%);
@@ -68,8 +65,7 @@
 
   /* card__summary */
   .card__summary {
-    flex: 1 1 250px;
-    --stack: 1.5rem;
+    --stack: 24px;
     padding-inline: 1.875rem;
     padding-block: 1.5rem 1.875rem;
   }
@@ -157,8 +153,8 @@
 
   .card__summary-button:link,
   .card__summary-button:visited {
-    padding-block: 17px 16px;
-    border-radius: 128px;
+    padding-block: 1.0625rem 1rem;
+    border-radius: 8rem;
     background-color: var(--bg-color-3);
     color: var(--text-color-2);
     font-size: 1.125rem;
