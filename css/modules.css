@@ -6,6 +6,16 @@
     display: flex;
     flex-flow: row wrap;
     background-color: var(--bg-color-2);
+    overflow: hidden;
+
+    @media (width > 400px) {
+      border-radius: 2rem;
+      box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
+    }
+
+    @media (width > 1000px) {
+      margin-block: 17.75rem;
+    }
   }
 
   .article-card {
@@ -13,8 +23,6 @@
   }
 
   .article-card>* {
-    /* .card__result, */
-    /* .card__summary */
     flex: 1 1 15.625rem;
   }
 
@@ -22,14 +30,15 @@
   .card__result {
     --stack: 1.5rem;
     padding-block: 1.5rem 2.5rem;
-
+    padding-inline: 1rem;
     border-radius: 0px 0px 32px 32px;
     background: linear-gradient(180deg, #D955FF 0%, #6943FF 0.01%, #2F2CE9 100%);
     box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
 
     @media (width > 400px) {
-      padding-block: 2.375rem 3.4375rem;
       --stack: 2.1875rem;
+      padding-block: 2.375rem 3.4375rem;
+      border-radius: 2rem;
     }
   }
 
@@ -69,7 +78,6 @@
     opacity: 0.5168;
   }
 
-
   .card__result-content {
     @media (width > 400px) {
       --stack: 1.75rem;
@@ -95,13 +103,21 @@
   /* card__summary */
   .card__summary {
     --stack: 1.5rem;
-    padding-inline: 1.875rem;
     padding-block: 1.5rem 1.875rem;
+    padding-inline: 1rem;
 
     @media (width > 400px) {
       --stack: 1.75rem;
-      padding-inline: 2.5rem;
       padding-block: 2.375rem 2.875rem;
+    }
+  }
+
+  .card__summary>* {
+    max-inline-size: 19.6875rem;
+    margin-inline: auto;
+
+    @media (width > 400px) {
+      max-inline-size: max(18rem, calc(100% - 2rem));
     }
   }
 
@@ -118,10 +134,14 @@
   .card__summary-item {
     padding-block: 1.0625rem 1.125rem;
     padding-inline: 1rem;
-    border-radius: 12px;
+    border-radius: 0.75rem;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    @media (width > 400px) {
+      padding-block: 1.0625rem 1rem;
+    }
 
     @media (width < 250px) {
       justify-content: center;
@@ -200,5 +220,4 @@
     background: linear-gradient(180deg, #D955FF 0%, #6943FF 0.01%, #2F2CE9 100%);
     box-shadow: 0px 30px 60px 0px rgba(61, 108, 236, 0.15);
   }
-
 }
