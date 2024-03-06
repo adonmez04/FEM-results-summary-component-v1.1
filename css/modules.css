@@ -113,11 +113,11 @@
   }
 
   .card__summary>* {
-    max-inline-size: 19.6875rem;
+    max-inline-size: min(18rem, calc(100% - 2rem));
     margin-inline: auto;
 
-    @media (width > 400px) {
-      max-inline-size: max(18rem, calc(100% - 2rem));
+    @media (width < 520px) {
+    max-inline-size: max(18rem, calc(100% - 2rem));
     }
   }
 
