@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer theme {
-
-  /* Raw Colors */
   :root {
-    --white-100: hsla(0 0% 100% / 1);
-    --blue-20: hsla(241 100% 89% / 1);
-    --blue-50: hsla(234 85% 45% / 1);
-    --blue-70: hsla(223 30% 27% / 1);
-    --red-50: hsla(0 100% 67% / 1);
-    --green-50: hsla(166 100% 37% / 1);
-    --yellow-50: hsla(40, 100%, 56%, 1);
-
-    --red-10: hsla(0 100% 67% / 1);
-    --yellow-10: hsla(39 100% 56% / 1);
-    --green-10: hsla(166 100% 37% / 1);
-    --blue-10: hsla(234 85% 45% / 1);
-    --blue-05: hsla(220 100% 96% / 1);
-  }
-
-  /* Theme Colors */
-  :root {
+    /* Raw Colors */
+    --white-100: hsla(0deg 0% 100% / 100%);
+    --blue-20: hsla(241deg 100% 89% / 100%);
+    --blue-50: hsla(234deg 85% 45% / 100%);
+    --blue-70: hsla(223deg 30% 27% / 100%);
+    --red-50: hsla(0deg 100% 67% / 100%);
+    --green-50: hsla(166deg 100% 37% / 100%);
+    --yellow-50: hsl(40deg 100% 56% / 100%);
+    --red-10: hsla(0deg 100% 67% / 100%);
+    --yellow-10: hsla(39deg 100% 56% / 100%);
+    --green-10: hsla(166deg 100% 37% / 100%);
+    --blue-10: hsla(234deg 85% 45% / 100%);
+    --blue-05: hsla(220deg 100% 96% / 100%);
+    
+    /* Theme Colors */
     --text-color-1: var(--blue-20);
     --text-color-2: var(--white-100);
     --text-color-3: var(--blue-70);
@@ -29,17 +25,17 @@
     --text-color-6: var(--yellow-50);
     --text-color-7: var(--green-50);
     --text-color-8: var(--blue-50);
-
+    
+    /* The background colors */
     --bg-color-1: var(--blue-05);
     --bg-color-2: var(--white-100);
     --bg-color-3: var(--blue-70);
 
-  }
-
-  /* Font Sizes */
-  :root {
-    /* For the mobile version - 375px */
-    /* For the desktop version - 736px */
+    /* Font Sizes */
+    
+    /* For the mobile version - 375px
+       For the desktop version - 736px
+      */
 
     /* 16px -> 18px */
     --normal: clamp(1rem, 0.8702rem + 0.554vi, 1.125rem);
