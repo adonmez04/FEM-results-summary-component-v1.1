@@ -3,15 +3,18 @@
     text-align: center;
   }
 
-  .margin-inline\:auto {
+  .margin-inline\:auto 
+  {
     margin-inline: auto;
   }
 
-  .stack>*+* {
+  .stack>*+* 
+  {
     margin-block-start: var(--stack);
   }
 
-  .stack-small > * + * {
+  .stack-small > * + * 
+  {
     margin-block-start: var(--stack-small);
   }
 
